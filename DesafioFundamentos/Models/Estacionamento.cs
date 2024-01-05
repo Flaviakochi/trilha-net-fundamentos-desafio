@@ -35,10 +35,14 @@ namespace DesafioFundamentos.Models
                 //Implementado!!!
                 int horas = 0;
                 decimal valorTotal = 0; 
+                horas = Convert.ToInt32(Console.ReadLine());
 
+                if (horas > 0)
+                {
                 valorTotal = precoInicial + precoPorHora * horas;
-
+                }
                 //Implementado!!!
+                
                 veiculos.Remove(placa);
 
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
